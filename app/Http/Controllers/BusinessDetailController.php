@@ -17,7 +17,7 @@ class BusinessDetailController extends Controller
 
     public function store(Request $request){
         $validatedValues = $request->validate([
-            'name'=>"required | string | max:2",
+            'name'=>"required | string | max:120",
             'email'=>"required | email | string",
             'contactName'=>"required | string ",
             'phoneNumber'=>"required | string ",
